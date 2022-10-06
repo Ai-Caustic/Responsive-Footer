@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  display: grid;
+  justify-content: end;
+  align-content: end;
+  min-height: 100vh;
+}
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: black;
+}
+footer .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+footer .container .sec h2 {
+  position: relative;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+footer .container .sec h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: lime;
+}
+footer .container .sec p {
+  color: white;
+}
+.socials {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-gap: 10px;
+}
+.socials li {
+  list-style: none;
+}
+.socials li a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: rgb(25, 23, 23);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.socials li a:hover,
+.socials li a i:hover {
+  background: white;
+}
+.quicklinks {
+  position: relative;
+}
+.quicklinks li {
+  list-style: none;
+}
+.quicklinks li a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.quicklinks li a:hover {
+  color: lime;
+}
+.info {
+  position: relative;
+}
+.info li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-bottom: 16px;
+}
+.info li span:nth-child(1) {
+  color: white;
+  font-size: 20px;
+}
+.info li span {
+  color: white;
+}
+.info a {
+  color: white;
+  text-decoration: none;
+}
+.info a:hover {
+  color: lime;
+}
+.copyright-text {
+  width: 100%;
+  background: black;
+  padding: 8px 100px;
+  text-align: center;
+  color: white;
+}
+#love {
+  color: red;
+}
+
+@media (max-width: 991px) {
+  footer {
+    padding: 40px;
+  }
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .copyright-text {
+    padding: 8px 40px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 140px;
+  }
+  footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .copyright-text {
+    padding: 8px 40px;
+  }
+}
